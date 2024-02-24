@@ -1,0 +1,3 @@
+nilai = int(input("Masukkan sebuah nilai: "))
+hasil = "Positif" if nilai > 0 else "Negatif"
+print(hasil)
