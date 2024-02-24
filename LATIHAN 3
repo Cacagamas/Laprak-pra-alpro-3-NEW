@@ -1,0 +1,17 @@
+def jumlah_hari(bulan):
+    if bulan == 2:
+        return 29  
+    elif bulan in [4, 6, 9, 11]:
+        return 30  
+    else:
+        return 31  
+
+try:
+    nomor_bulan = int(input("Masukkan bulan (1-12): "))
+    if nomor_bulan < 1 or nomor_bulan > 12:
+        raise ValueError("Bulan yang dimasukkan tidak valid")
+    
+    jumlah = jumlah_hari(nomor_bulan)
+    print("Jumlah hari:", jumlah)
+except ValueError as e:
+    print("Error:", e)
